@@ -1,20 +1,14 @@
-# Clojure Map and Filter
+# clojure-filtering
 
-![screenshot](http://i.imgur.com/yk8SHoA.gif)
+A Clojure library designed to ... well, that part is up to you.
 
-## Description
+## Usage
 
-Read and parse the CSV file of purchase data. Allow the user to filter the list by typing in a category name.
+FIXME
 
-## Requirements
+## License
 
-* Create a project with `purchases.csv` in it
-* Read the file and parse it into a vector of lines
-* Split each line into vectors (delimited by commas)
-* Separate the header from the rest of the lines
-* Make each line a hash map that associates each item in the header with each item in the line
-* Ask the user to type a category
-  * The possible categories are: Furniture, Alcohol, Toiletries, Shoes, Food, Jewelry
-* Read a line of input from the user
-* Filter the vector so it only contains hash maps whose category equals the input from the user
-* Save the results into a file called `filtered_purchases.json`
+Copyright © 2016 FIXME
+
+Distributed under the Eclipse Public License either version 1.0 or (at
+your option) any later version.
