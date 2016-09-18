@@ -7,10 +7,10 @@
 (defn -main []
   (println "Type a category:")
   (let [purchases (slurp "purchases.csv")
-        ;spliting string into vector of strings by line.
+        ; spliting string into vector of strings by line.
         ; uses "imported" clojure.string which is assigned to "alias" str
         purchases (str/split-lines purchases)
-        ;splits each line into a vector of strings based on commas
+        ; splits each line into a vector of strings based on commas
         purchases (map (fn [line]
                       (str/split line #","))
                     purchases)
@@ -37,5 +37,5 @@
         ; converts text file to json
         ; uses "import" which is declared in ns :require
         file-text (json/write-str purchases)]
-    ; writes file
+        ; writes file
     (spit "filtered_purchases.json" file-text)))
